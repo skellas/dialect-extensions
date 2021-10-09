@@ -1,0 +1,11 @@
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    platform: h2
+    url: jdbc:h2:mem:dialectExtension;Mode=Oracle
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
