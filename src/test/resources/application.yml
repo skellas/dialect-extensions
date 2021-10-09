@@ -8,12 +8,4 @@ spring:
     password: password
     driver-class-name: org.h2.Driver
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-
----
-spring:
-  config:
-    activate:
-      on-profile: test
-  jpa:
     database-platform: com.sethkellas.dialectextensions.dialects.H2CustomDialect

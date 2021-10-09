@@ -10,7 +10,7 @@ public class H2CustomDialect extends H2Dialect {
     public H2CustomDialect() {
         super();
         registerFunction("LISTAGG", new SQLFunctionTemplate(STRING, 
-        "LISTAGG(distinct ?1, ',') WITHIN GROUP(ORDER BY ?1)"));
+            "LISTAGG(distinct ?1, ',') WITHIN GROUP(ORDER BY ?1)"));
     }
     
 }
